@@ -18,17 +18,11 @@ public class SessionPrice {
     }
 
     public boolean isLessThanOrEqualTo(long salePrice) {
-        if (this.salePrice < salePrice) {
-            return true;
-        }
-        return false;
+        return this.salePrice < salePrice;
     }
 
     public boolean isLessThanTo(long salePrice) {
-        if (salePrice < 0) {
-            return true;
-        }
-        return false;
+        return salePrice < 0;
     }
 
 

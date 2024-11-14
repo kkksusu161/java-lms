@@ -25,10 +25,7 @@ public class Students {
     }
 
     public boolean isDuplicateStudent(NsUser student) {
-        if (students.contains(student)) {
-            return true;
-        }
-        return false;
+        return students.contains(student);
     }
 
     public NsUser getStudentIdx(int idx) {

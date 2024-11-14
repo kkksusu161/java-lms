@@ -4,16 +4,17 @@ import nextstep.courses.exception.CannotApproveSessionException;
 
 public class Instructor {
     private final InstructorId instructorId;
-
+    private final long nsUserId;
     private final String loginId;
 
     public Instructor(final InstructorId instructorId) {
-        this(instructorId, null);
+        this(instructorId, null, 0);
     }
 
-    public Instructor(final InstructorId instructorId, String loginId) {
+    public Instructor(final InstructorId instructorId, final String loginId, final long nsUserId) {
         this.instructorId = instructorId;
         this.loginId = loginId;
+        this.nsUserId = nsUserId;
     }
 
     public SessionOrder approveSessionOrder(SessionOrder sessionOrder) throws CannotApproveSessionException {

@@ -46,10 +46,10 @@ values ( 1, 1, 1000, 10, null), --1번강의 1번유저 대기중
        ( 2, 3, 1000, 30, 5); --2번강의를 듣는 3번유저를 5번강사가 승인거절함
 ;
 
-insert into INSTRUCTOR(LOGIN_ID, CELL_NO, EMAIL)
-values('instructor1','010-1111-1111','1@naver.com'),
-      ('instructor2','010-2222-2222','2@naver.com'),
-      ('instructor3','010-3333-3333','3@naver.com');
+insert into INSTRUCTOR(LOGIN_ID, CELL_NO, EMAIL, ID)
+values('instructor1','010-1111-1111','1@naver.com', 1),
+      ('instructor2','010-2222-2222','2@naver.com', 2),
+      ('instructor3','010-3333-3333','3@naver.com', 3);
 
 -- 세션 이미지 테이블에 데이터 삽입
 insert into session_image (session_id, file_name, file_size, type, width, height)
